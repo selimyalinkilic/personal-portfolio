@@ -15,12 +15,19 @@ module.exports = {
       secondary: '#00A8CC',
       dark: '#21243D',
       light: '#8695A4',
+      white: '#fff',
       blue: {
         light: '#EDF7FA'
+      },
+      red: {
+        500: '#cc5050'
       }
     },
     fontFamily: {
       body: ['"Heebo"', 'sans-serif']
+    },
+    boxShadow: {
+      DEFAULT: '0 4px 10px 0 rgba(187, 225, 250, .25)'
     }
   },
   variants: {
