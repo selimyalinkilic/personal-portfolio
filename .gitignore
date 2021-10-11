@@ -1,6 +1,5 @@
 .next
 node_modules
-public/
 out/
 .env
 .env.local
