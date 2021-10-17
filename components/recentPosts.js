@@ -15,7 +15,7 @@ const RecentPosts = ({ recentPosts }) => {
           {recentPosts &&
             recentPosts.map((post) => (
               <RecentPostCard
-                id={post.Id}
+                key={post.Id}
                 thumbnail={post.Thumbnail}
                 title={post.Title}
                 summary={post.Summary}

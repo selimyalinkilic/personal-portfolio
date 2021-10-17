@@ -80,7 +80,11 @@ const MyApp = ({ Component, pageProps }) => {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff"></meta>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={true}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
           rel="stylesheet"

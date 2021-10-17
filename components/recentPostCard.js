@@ -1,12 +1,9 @@
 import Link from 'next/link'
 import { DateTime } from '../utils/datetime'
 
-const RecentPostCard = ({ id, thumbnail, title, created, summary, slug }) => {
+const RecentPostCard = ({ thumbnail, title, created, summary, slug }) => {
   return (
-    <div
-      className="flex flex-col p-6 box-border bg-white rounded shadow"
-      key={id}
-    >
+    <div className="flex flex-col p-6 box-border bg-white rounded shadow">
       <div className="w-full h-64">
         {thumbnail?.map((item) => (
           <img
@@ -23,7 +20,7 @@ const RecentPostCard = ({ id, thumbnail, title, created, summary, slug }) => {
         {summary}
       </p>
       <div className="mt-5">
-        <Link href="/">
+        <Link href="/blog">
           <a className="underline text-dark hover:text-secondary">Read more</a>
         </Link>
       </div>
