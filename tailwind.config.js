@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -21,7 +23,9 @@ module.exports = {
       },
       red: {
         500: '#cc5050'
-      }
+      },
+      gray: colors.gray,
+      indigo: colors.indigo
     },
     fontFamily: {
       body: ['"Heebo"', 'sans-serif']
@@ -37,6 +41,7 @@ module.exports = {
     container: false
   },
   plugins: [
+    require('@tailwindcss/line-clamp'),
     function ({ addComponents }) {
       addComponents({
         '.container': {
