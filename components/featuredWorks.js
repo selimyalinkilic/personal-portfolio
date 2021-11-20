@@ -3,11 +3,11 @@ import FeaturedWorksCard from './featuredWorksCard'
 
 const FeaturedWorks = ({ featuredWorks }) => {
   return (
-    <section className="py-8">
-      <div className="container mx-auto">
+    <section className="bg-white py-8" id="works">
+      <div className="container mx-auto px-6 sm:px-0">
         <div className="flex items-center justify-between">
-          <h5 className="text-xl text-dark font-normal">Featured Posts</h5>
-          <Link href="/blog">
+          <h5 className="text-xl text-dark font-normal">Featured Works</h5>
+          <Link href="/works">
             <a className="text-base text-secondary hover:underline">View All</a>
           </Link>
         </div>
@@ -21,7 +21,7 @@ const FeaturedWorks = ({ featuredWorks }) => {
                 created={work.Created}
                 summary={work.Summary}
                 category={work.Category}
-                slug={work.Slug}
+                url={work.Url}
               />
             ))}
         </div>
