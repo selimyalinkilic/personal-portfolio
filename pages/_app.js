@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import 'tailwindcss/tailwind.css'
+import NextNProgress from 'nextjs-progressbar'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -90,6 +91,13 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         ></link>
       </Head>
+      <NextNProgress
+        color="#FF6464"
+        startPosition={0.2}
+        stopDelayMs={200}
+        height={2}
+        showOnShallow={true}
+      />
       <Component {...pageProps} />
     </>
   )
