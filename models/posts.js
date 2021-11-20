@@ -1,4 +1,3 @@
-import Airtable from 'airtable'
 import { base, minifiedRecords } from '../airtable'
 
 class Posts {
