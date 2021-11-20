@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { DateTime } from '../utils/datetime'
 
-const RecentPostCard = ({ thumbnail, title, created, summary, slug }) => {
+const RecentPostsCard = ({ thumbnail, title, created, summary, slug }) => {
   return (
     <div className="flex flex-col p-6 box-border bg-white rounded shadow">
       <div className="w-full h-64">
@@ -28,4 +28,4 @@ const RecentPostCard = ({ thumbnail, title, created, summary, slug }) => {
   )
 }
 
-export default RecentPostCard
+export default RecentPostsCard
