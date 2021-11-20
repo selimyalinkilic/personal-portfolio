@@ -3,7 +3,7 @@ import FeaturedWorksCard from './featuredWorksCard'
 
 const FeaturedWorks = ({ featuredWorks }) => {
   return (
-    <section className="bg-white py-8" id="works">
+    <section className="bg-white py-8">
       <div className="container mx-auto px-6 sm:px-0">
         <div className="flex items-center justify-between">
           <h5 className="text-xl text-dark font-normal">Featured Works</h5>
