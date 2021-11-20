@@ -3,7 +3,7 @@ const AboutMe = () => {
     <section className="mt-8 mb-12 lg:mt-32 lg:mb-20">
       <div className="container mx-auto px-6 md:px-0 border-box">
         <div className="flex w-full flex-col-reverse lg:flex-row items-center lg:items-start">
-          <div className="w-full lg:w-2/3 flex flex-col mt-9 lg:mt-0">
+          <div className="w-full lg:w-auto flex flex-col mt-9 lg:mt-0">
             <h1 className="text-3xl lg:text-5xl text-dark font-bold text-center lg:text-left">
               Hi, I am Selim
             </h1>
@@ -23,7 +23,7 @@ const AboutMe = () => {
                 . Also love to improving myself about to new techs.
               </p>
             </div>
-            <div className="flex mt-7 lg:mt-20">
+            <div className="flex mt-7 lg:mt-20 hidden">
               <a
                 href="/"
                 className="transition-colors rounded-sm bg-primary py-2 px-5 lg:py-4 lg:px-10 font-medium text-white text-lg hover:bg-red-500 mx-auto lg:mx-0"
@@ -32,8 +32,8 @@ const AboutMe = () => {
               </a>
             </div>
           </div>
-          <div className="w-full lg:w-1/3 flex justify-center">
-            <div className="relative flex justify-end rounded-full max-w-xs w-28 h-28 md:w-full md:h-screen md:max-h-64 lg:max-h-72 xl:max-h-80">
+          <div className="w-full lg:w-auto flex justify-center">
+            <div className="relative flex justify-end rounded-full w-36 md:w-60 lg:w-64 xl:w-80 h-36 md:h-60 lg:h-64 xl:h-80">
               <div className="w-full h-full bg-blue-light rounded-full"></div>
               <img
                 src="/my.JPG"
