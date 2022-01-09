@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import 'tailwindcss/tailwind.css'
 import NextNProgress from 'nextjs-progressbar'
+import Script from 'next/script'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -91,6 +92,17 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         ></link>
       </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-MM4MS8PY3H`}
+      />
+      <Script>
+        {`
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-MM4MS8PY3H');
+        `}
+      </Script>
       <NextNProgress
         color="#FF6464"
         startPosition={0.2}
