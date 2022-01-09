@@ -84,21 +84,12 @@ const MyApp = ({ Component, pageProps }) => {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin={true}
+          crossOrigin="true"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
           rel="stylesheet"
         ></link>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-MM4MS8PY3H"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-MM4MS8PY3H');
-        </script>
       </Head>
       <NextNProgress
         color="#FF6464"
