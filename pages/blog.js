@@ -55,6 +55,7 @@ const Blog = ({ posts }) => {
                 categories={item.CategoryNames}
                 summary={item.Summary}
                 slug={item.Slug}
+                recordId={item.RecordId}
               />
             ))}
         </div>
