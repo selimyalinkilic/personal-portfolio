@@ -12,14 +12,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/line-clamp": "^0.2.2",
     "airtable": "^0.11.1",
     "next": "^11.1.2",
     "nextjs-progressbar": "^0.0.13",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-markdown": "^8.0.0",
+    "react-share": "^4.4.0"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.7",
     "postcss": "^8.3.9",
     "prettier": "^2.4.1",
