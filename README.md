@@ -9,7 +9,7 @@ A passionate frontend developer from **Turkey** and currently working at **[Shop
 
 
 
-### 🛠 Development technologies
+### 🛠 Development technologies:
 
 <p align="left">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=323330" alt="Javascript" />
@@ -18,19 +18,19 @@ A passionate frontend developer from **Turkey** and currently working at **[Shop
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
 </p>
 
-### 💾 Database technologies
+### 💾 Database technologies:
 
 <p align="left">
     <img src="https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=Airtable&logoColor=white" alt="Airtable" />
 </p>
 
-### ⚙️ Version controlling tools
+### ⚙️ Version controlling tools:
 
 <p align="left">
     <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </p>
 
-### 🌐 Hosting tools
+### 🌐 Hosting tools:
 
 <p align="left">
     <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
