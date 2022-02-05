@@ -5,6 +5,7 @@ class Posts {
     const records = await base('Posts')
       .select({
         maxRecords: 2,
+        filterByFormula: 'NOT({Visibility} = "0")',
         sort: [{ field: 'Created', direction: 'desc' }]
       })
       .all()
