@@ -1,7 +1,14 @@
 import Link from 'next/link'
 import { DateTime } from '../utils/datetime'
 
-const RecentPostsCard = ({ thumbnail, title, created, summary, slug }) => {
+const RecentPostsCard = ({
+  thumbnail,
+  title,
+  created,
+  summary,
+  slug,
+  recordId
+}) => {
   return (
     <div className="flex flex-col p-6 box-border bg-white rounded shadow">
       <div className="w-full h-64">
@@ -20,7 +27,7 @@ const RecentPostsCard = ({ thumbnail, title, created, summary, slug }) => {
         {summary}
       </p>
       <div className="mt-5">
-        <Link href="/blog">
+        <Link href={`/blog/${recordId}/${slug}`}>
           <a className="underline text-dark hover:text-secondary">Read more</a>
         </Link>
       </div>
