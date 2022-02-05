@@ -32,6 +32,29 @@ module.exports = {
     },
     boxShadow: {
       DEFAULT: '0 4px 10px 0 rgba(187, 225, 250, .25)'
+    },
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#21243D',
+            a: {
+              color: '#FF6464',
+              textDecoration: 'underline'
+            },
+            h1: {
+              textDecoration: 'underline'
+            },
+            h2: {
+              textDecoration: 'underline'
+            },
+            img: {
+              maxWidth: '100%',
+              width: '100%'
+            }
+          }
+        }
+      }
     }
   },
   variants: {
@@ -41,6 +64,7 @@ module.exports = {
     container: false
   },
   plugins: [
+    require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
     function ({ addComponents }) {
       addComponents({
