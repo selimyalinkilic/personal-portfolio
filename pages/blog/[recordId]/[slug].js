@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Layout from '../../../components/layout'
 import Posts from '../../../models/posts'
@@ -6,8 +6,24 @@ import { BsCalendar2Event, BsClock } from 'react-icons/bs'
 import { DateTime } from '../../../utils/datetime'
 import ReactMarkdown from 'react-markdown'
 import { readingTime } from '../../../utils/readingTime'
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+  TelegramIcon,
+  TelegramShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton
+} from 'react-share'
 
 const BlogDetail = ({ post }) => {
+  const [shareUrl, setShareUrl] = useState()
+  useEffect(() => {
+    setShareUrl(`http://selimyalinkilic.com/blog/${post.RecordId}/${post.Slug}`)
+  }, [])
   return (
     <Layout>
       <Head>
@@ -78,6 +94,40 @@ const BlogDetail = ({ post }) => {
           children={post.Content}
           className="prose prose-sm mx-auto my-14 w-full max-w-none"
         />
+        <div className="flex items-center mb-10">
+          <span className="text-base text-dark pr-4">Share on : </span>
+          <div className="flex">
+            <div className="flex flex-col items-center mr-4">
+              <FacebookShareButton url={shareUrl} quote={post.Summary}>
+                <FacebookIcon size={24} round={true} />
+              </FacebookShareButton>
+            </div>
+            <div className="flex flex-col items-center mr-4">
+              <TwitterShareButton url={shareUrl} title={post.Title}>
+                <TwitterIcon size={24} round={true} />
+              </TwitterShareButton>
+            </div>
+            <div className="flex flex-col items-center mr-4">
+              <LinkedinShareButton
+                url={shareUrl}
+                title={post.Title}
+                summary={post.Summary}
+              >
+                <LinkedinIcon size={24} round={true} />
+              </LinkedinShareButton>
+            </div>
+            <div className="flex flex-col items-center mr-4 lg:hidden">
+              <WhatsappShareButton url={shareUrl} title={post.Title}>
+                <WhatsappIcon size={24} round={true} />
+              </WhatsappShareButton>
+            </div>
+            <div className="flex flex-col items-center mr-4 lg:hidden">
+              <TelegramShareButton url={shareUrl} title={post.Title}>
+                <TelegramIcon size={24} round={true} />
+              </TelegramShareButton>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   )
