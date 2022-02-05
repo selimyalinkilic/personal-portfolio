@@ -7,7 +7,6 @@ import BlogSkeleton from '../components/blogSkeleton'
 const Blog = ({ posts }) => {
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState(false)
-  console.log(posts)
   useEffect(() => {
     if (posts.length >= 1) {
       setLoading(true)
