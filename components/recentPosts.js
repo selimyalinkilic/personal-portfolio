@@ -3,7 +3,7 @@ import RecentPostsCard from './recentPostsCard'
 
 const RecentPosts = ({ recentPosts }) => {
   return (
-    <section className="bg-blue-light py-8">
+    <section className="bg-white py-8">
       <div className="container mx-auto px-6 sm:px-0">
         <div className="flex items-center justify-between">
           <h5 className="text-xl text-dark font-normal">Recent Posts</h5>
@@ -13,13 +13,14 @@ const RecentPosts = ({ recentPosts }) => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
           {recentPosts &&
-            recentPosts.map((post) => (
+            recentPosts.map((post, i) => (
               <RecentPostsCard
-                key={post.Id}
+                key={i}
                 thumbnail={post.Thumbnail}
                 title={post.Title}
                 summary={post.Summary}
                 created={post.Created}
+                recordId={post.RecordId}
                 slug={post.Slug}
               />
             ))}
